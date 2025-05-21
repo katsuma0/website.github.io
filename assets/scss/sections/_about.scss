@@ -1,0 +1,86 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background: rgba(var(--background-alt-rgb), 0.7); // Subtle background contrast
+
+  .section-subtitle {
+    font-size: 2.8rem; // Larger title
+    font-weight: 700;
+    color: var(--heading-color);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px; // Tighter spacing for modern look
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 70px; // Wider accent line
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px; // Softened edges
+    }
+  }
+
+  .lead {
+    font-size: 1.4rem; // More prominent intro text
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 2rem !important;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-top: 1rem;
+
+    li {
+      list-style: none;
+      padding-bottom: 12px;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: flex-start;
+
+      strong {
+        font-weight: 600;
+        color: var(--heading-color);
+        min-width: 120px; // Aligns labels neatly
+        display: inline-block;
+      }
+    }
+  }
+
+  h3 {
+    color: var(--heading-color);
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 1.5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--accent-color);
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+  }
+
+  .img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(var(--border-rgb), 0.2);
+  }
+}
